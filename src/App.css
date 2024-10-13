@@ -1,0 +1,106 @@
+/* General container styling */
+.app-container {
+  margin: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Video detail section */
+.video-detail {
+  flex: 3;
+  min-width: 60%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video list section */
+.video-list {
+  flex: 1;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual video items */
+.video-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.video-item:hover {
+  background-color: #f0f0f0;
+}
+
+.video-item img {
+  max-width: 120px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.video-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Add some space for video title and description */
+.video-item h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.video-item p {
+  margin: 5px 0 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Video detail section styling */
+.video-detail iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .video-detail {
+    min-width: 100%;
+  }
+
+  .video-list {
+    max-height: 60vh;
+    margin-top: 20px;
+  }
+
+  .video-item img {
+    max-width: 100px;
+  }
+}
